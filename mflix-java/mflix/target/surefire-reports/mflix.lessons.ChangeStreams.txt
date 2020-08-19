@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: mflix.lessons.ChangeStreams
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 17.197 s <<< FAILURE! - in mflix.lessons.ChangeStreams
+testWatchAllUpdates(mflix.lessons.ChangeStreams)  Time elapsed: 5.009 s  <<< ERROR!
+com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'user is not allowed to do action [find] on [sample_mflix.comments]' on server cluster0-shard-00-02.zdcig.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "user is not allowed to do action [find] on [sample_mflix.comments]", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.lessons.ChangeStreams.testWatchAllUpdates(ChangeStreams.java:190)
+
+testWatchAllUpdates(mflix.lessons.ChangeStreams)  Time elapsed: 5.01 s  <<< ERROR!
+com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'user is not allowed to do action [remove] on [sample_mflix.comments]' on server cluster0-shard-00-02.zdcig.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "user is not allowed to do action [remove] on [sample_mflix.comments]", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.lessons.ChangeStreams.tearDown(ChangeStreams.java:261)
+
+testWatchAllEvenInserts(mflix.lessons.ChangeStreams)  Time elapsed: 3.866 s  <<< ERROR!
+com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'user is not allowed to do action [find] on [sample_mflix.comments]' on server cluster0-shard-00-02.zdcig.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "user is not allowed to do action [find] on [sample_mflix.comments]", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.lessons.ChangeStreams.testWatchAllEvenInserts(ChangeStreams.java:151)
+
+testWatchAllEvenInserts(mflix.lessons.ChangeStreams)  Time elapsed: 3.867 s  <<< ERROR!
+com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'user is not allowed to do action [remove] on [sample_mflix.comments]' on server cluster0-shard-00-02.zdcig.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "user is not allowed to do action [remove] on [sample_mflix.comments]", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.lessons.ChangeStreams.tearDown(ChangeStreams.java:261)
+
+testWatchFieldUpdates(mflix.lessons.ChangeStreams)  Time elapsed: 3.616 s  <<< ERROR!
+com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'user is not allowed to do action [find] on [sample_mflix.comments]' on server cluster0-shard-00-02.zdcig.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "user is not allowed to do action [find] on [sample_mflix.comments]", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.lessons.ChangeStreams.testWatchFieldUpdates(ChangeStreams.java:232)
+
+testWatchFieldUpdates(mflix.lessons.ChangeStreams)  Time elapsed: 3.617 s  <<< ERROR!
+com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'user is not allowed to do action [remove] on [sample_mflix.comments]' on server cluster0-shard-00-02.zdcig.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "user is not allowed to do action [remove] on [sample_mflix.comments]", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.lessons.ChangeStreams.tearDown(ChangeStreams.java:261)
+
+testWhatchAllInserts(mflix.lessons.ChangeStreams)  Time elapsed: 3.608 s  <<< ERROR!
+com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'user is not allowed to do action [find] on [sample_mflix.comments]' on server cluster0-shard-00-02.zdcig.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "user is not allowed to do action [find] on [sample_mflix.comments]", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.lessons.ChangeStreams.testWhatchAllInserts(ChangeStreams.java:96)
+
+testWhatchAllInserts(mflix.lessons.ChangeStreams)  Time elapsed: 3.609 s  <<< ERROR!
+com.mongodb.MongoCommandException: Command failed with error 8000 (AtlasError): 'user is not allowed to do action [remove] on [sample_mflix.comments]' on server cluster0-shard-00-02.zdcig.mongodb.net:27017. The full response is { "ok" : 0, "errmsg" : "user is not allowed to do action [remove] on [sample_mflix.comments]", "code" : 8000, "codeName" : "AtlasError" }
+	at mflix.lessons.ChangeStreams.tearDown(ChangeStreams.java:261)
+
